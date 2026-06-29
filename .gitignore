@@ -1,0 +1,27 @@
+__pycache__/
+*.pyc
+*.pyo
+.env
+venv/
+.venv/
+*.egg-info/
+dist/
+build/
+
+# Raw data - bank extracts
+data/renamed/*.xls
+data/renamed/*.xlsx
+data/renamed/*.pdf
+data/uploads/
+
+# Output CSVs (regenerable)
+output/*.csv
+
+# Logs
+logs/
+
+# Consolidated Excel (keep for speed, but optional)
+# output/extrato_consolidado_condominio.xlsx
+
+# Manual validations (user data)
+data/manual_validations.csv

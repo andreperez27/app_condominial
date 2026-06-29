@@ -1,0 +1,142 @@
+mapeamento:
+  - codigo: 1002
+    descricao: "COTAS CONDOMINIAIS"
+    categoria: COTA_CONDOMINIAL
+  - codigo: 1010
+    descricao: "CONSUMO DE GAS"
+    categoria: GAS
+  - codigo: 1052
+    descricao: "CONSUMO DE AGUA"
+    categoria: AGUA
+  - codigo: 3002
+    descricao: "COTAS DO MES FUNDO DE RESERVA"
+    categoria: FUNDO_RESERVA
+  - codigo: 2002
+    descricao: "COTAS DO MES BENFEITORIAS"
+    categoria: BENFEITORIAS
+  - codigo: 19002
+    descricao: "COTAS DO MES SALAO DE FESTAS"
+    categoria: SALAO_FESTAS
+  - codigo: 15002
+    descricao: "COTAS DO MES MANUT. PINTURA"
+    categoria: MANUT_PINTURA
+  - codigo: 1098
+    descricao: "MULTAS"
+    categoria: MULTAS
+  - codigo: 2998
+    descricao: "MULTAS"
+    categoria: MULTAS
+  - codigo: 3998
+    descricao: "MULTAS ARRECADADAS"
+    categoria: MULTAS
+  - codigo: 15998
+    descricao: "MULTAS ARRECADADAS"
+    categoria: MULTAS
+  - codigo: 19998
+    descricao: "MULTAS ARRECADADAS"
+    categoria: MULTAS
+  - codigo: 1006
+    descricao: "RECEITA PARCELAS ACORDO"
+    categoria: ACORDOS
+  - codigo: 2005
+    descricao: "RECEITA PARCELAS ACORDO"
+    categoria: ACORDOS
+  - codigo: 3005
+    descricao: "RECEITA PARCELAS ACORDO"
+    categoria: ACORDOS
+  - codigo: 15005
+    descricao: "RECEITA PARCELAS ACORDO"
+    categoria: ACORDOS
+  - codigo: 1023
+    descricao: "CORRECAO MONETARIA"
+    categoria: CORRECAO_MONETARIA
+  - codigo: 1026
+    descricao: "REND.APLIC.FINANC"
+    categoria: RENDIMENTO_APLICACAO
+  - codigo: 1041
+    descricao: "TRANSF. REGUL. ENTRE CONTAS"
+    categoria: TRANSFERENCIA_ENTRE_CONTAS
+  - codigo: 3003
+    descricao: "FUNDO DE RESERVA RECEITAS"
+    categoria: RECEITAS_FUNDO_RESERVA
+  - codigo: 1015
+    descricao: "RECEITAS EVENTUAIS"
+    categoria: RECEITAS_EVENTUAIS
+  - codigo: 1050
+    descricao: "MANUTENCOES DIVERSAS"
+    categoria: MANUTENCOES_DIVERSAS
+  - codigo: 1102
+    descricao: "TAXA DE ADMINISTRACAO"
+    categoria: TAXA_ADMINISTRACAO
+  - codigo: 1001
+    descricao: "CONDOMINOS EM ATRASO"
+    categoria: ATRASO_COTA_CONDOMINIAL
+  - codigo: 2001
+    descricao: "CONDOMINOS EM ATRASO"
+    categoria: ATRASO_BENFEITORIAS
+  - codigo: 3001
+    descricao: "CONDOMINOS EM ATRASO"
+    categoria: ATRASO_FUNDO_RESERVA
+  - codigo: 19001
+    descricao: "CONDOMINOS EM ATRASO"
+    categoria: ATRASO_SALAO_FESTAS
+  - codigo: 10003
+    descricao: "PORTA AUTOMATICA RECEITAS"
+    categoria: PORTA_AUTOMATICA_RECEITAS
+  - codigo: 15501
+    descricao: "DIVERSOS"
+    categoria: DIVERSOS
+  - codigo: 1642
+    descricao: "CONSUMO DE AGUA"
+    categoria: DESPESA_AGUA
+  - codigo: 1643
+    descricao: "CONSUMO DE GAS"
+    categoria: DESPESA_GAS
+  - codigo: 1042
+    descricao: "ESTORNO"
+    categoria: ESTORNO
+  - codigo: 1521
+    descricao: "TRIBUTOS FOLHA E FORNECEDORES"
+    categoria: TRIBUTOS_FOLHA
+  - codigo: 1723
+    descricao: "CAIXA LOCAL"
+    categoria: CAIXA_LOCAL
+
+# Mapeamento por palavras-chave no texto da descricao (fallback)
+mapeamento_texto:
+  - palavras: ["FUNDO DE RESERVA", "FDO RESERVA"]
+    categoria: FUNDO_RESERVA
+  - palavras: ["CONSUMO DE GAS", "CONSUMO DE GÁS"]
+    categoria: GAS
+  - palavras: ["CONSUMO DE AGUA", "CONSUMO DE ÁGUA"]
+    categoria: AGUA
+  - palavras: ["BENFEITORIAS"]
+    categoria: BENFEITORIAS
+  - palavras: ["SALAO DE FESTAS", "SALÃO DE FESTAS"]
+    categoria: SALAO_FESTAS
+  - palavras: ["MANUT. PINTURA", "MANUTENCAO PINTURA"]
+    categoria: MANUT_PINTURA
+  - palavras: ["MULTAS"]
+    categoria: MULTAS
+  - palavras: ["ACORDO"]
+    categoria: ACORDOS
+  - palavras: ["CONTA CONDOMINIO"]
+    categoria: COTA_CONDOMINIAL
+  - palavras: ["APLICAÇÃO BTG", "APLICACAO BTG"]
+    categoria: APLICACAO_BTG
+  - palavras: ["CAIXA LOCAL", "REPOSICAO DE CAIXA"]
+    categoria: CAIXA_LOCAL
+
+# Nomes de categorias na planilha-resumo para normalizacao
+mapeamento_planilha:
+  "CONTA CONDOMINIO": COTA_CONDOMINIAL
+  "FUNDO DE RESERVA": FUNDO_RESERVA
+  "SALAO DE FESTAS": SALAO_FESTAS
+  "SALÃO DE FESTAS": SALAO_FESTAS
+  "BENFEITORIAS": BENFEITORIAS
+  "APLICAÇÃO BTG": APLICACAO_BTG
+  "APLICACAO BTG": APLICACAO_BTG
+  "FDO P/TROCA TUBULACAO GAS": TROCA_TUBULACAO_GAS
+  "Mant. PINTURA": MANUT_PINTURA
+  "MANUT. PINTURA": MANUT_PINTURA
+  "SALDO FINAL": SALDO_FINAL
